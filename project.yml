@@ -1,0 +1,29 @@
+name: RealBatteryTester
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    macOS: "13.0"
+targets:
+  RealBatteryTester:
+    type: application
+    platform: macOS
+    sources: 
+      - RealBatteryTester
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.BatteryTester
+        PRODUCT_NAME: RealBatteryTester
+        MACOSX_DEPLOYMENT_TARGET: "13.0"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+    info:
+      path: RealBatteryTester/Info.plist
+      properties:
+        LSMinimumSystemVersion: "13.0"
+        CFBundleName: RealBatteryTester
+        CFBundleDisplayName: Real Battery Tester
+        CFBundlePackageType: APPL
+        CFBundleShortVersionString: "1.0"
+        CFBundleVersion: "1"
+        NSHighResolutionCapable: true
+        CFBundleIconFile: AppIcon
+        CFBundleIconName: AppIcon
