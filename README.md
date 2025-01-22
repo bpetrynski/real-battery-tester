@@ -1,6 +1,8 @@
 # Real Battery Tester
 
-A comprehensive battery testing tool for macOS that helps diagnose battery health and performance.
+A comprehensive battery testing tool for macOS that helps diagnose battery health and performance. Unlike standard battery indicators that rely on estimations, this tool is designed to realistically simulate real-life scenarios and measure actual battery strength. It allows you to determine precisely how long your computer will operate on battery power until shutdown under various usage conditions.
+
+![Real Battery Tester Screenshot](real-battery-tester-screenshot.png)
 
 ## Features
 
