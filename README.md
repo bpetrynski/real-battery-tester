@@ -13,6 +13,42 @@ A comprehensive battery testing tool for macOS that helps diagnose battery healt
 - Extrapolated battery life calculations
 - Visual status indicators with SF Symbols
 
+## Workload Modes
+
+The app provides four distinct workload modes to simulate different usage scenarios:
+
+1. **Screen On**: Keeps the display active without additional processing load. Ideal for measuring base power consumption and display impact on battery life.
+
+2. **Browsing**: Simulates web browsing activity by periodically making network requests to common websites. This provides insights into battery consumption during typical web browsing sessions.
+
+3. **Video**: Simulates video playback by performing continuous image processing operations at 30 FPS. This helps measure battery life during media consumption.
+
+4. **Heavy Load**: Maximizes CPU and memory usage to test battery drain under intensive workloads:
+   - Utilizes all available CPU cores with complex mathematical calculations
+   - Creates memory pressure through large data allocations
+   - Simulates real-world intensive tasks like video rendering or data processing
+
+## Metrics and Measurements
+
+The app tracks and analyzes several key metrics during battery tests:
+
+- **Battery Level**: Current charge percentage and real-time monitoring of level changes
+- **Drain Rate**: Percentage of battery consumed per minute
+- **Extrapolated Battery Life**: Projected total battery life based on current drain rate
+- **Test Duration**: Actual time elapsed since test start
+- **Estimated Time**: System's estimated remaining battery time
+- **Initial vs Current Estimates**: Comparison of initial and current battery life projections
+
+Additional technical metrics recorded for each test:
+- Power source status
+- Battery temperature
+- Cycle count
+- Maximum and design capacity
+- Voltage and amperage readings
+- Battery health and condition
+
+The app automatically saves test reports and maintains a detailed log of battery behavior, including intermediate measurements at significant battery level changes (every 5% or at critical levels).
+
 ## Requirements
 
 - macOS 13.0 or later
